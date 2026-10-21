@@ -1,5 +1,7 @@
 # Agent Arena
 
+Codex fork: install `skills/agent-arena` as `$arena-debate`. An explicit Codex-only request uses fresh native Codex subagents and is labelled same-family review; cross-model review remains available when requested. This avoids a name collision with `$arena-prototypes` and `$arena-tournament`.
+
 > **Evidence-first multi-agent debate for Claude Code × Codex** — a second opinion that survives cross-examination.
 
 <p align="center">

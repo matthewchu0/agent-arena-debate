@@ -6,7 +6,7 @@ Use this reference when launching an external participant or diagnosing a call. 
 
 Resolve the selected host, CLI/provider, model or family constraint and approved evidence scope. Check availability/version and supported flags, then a harmless authenticated completion on that route. A version or catalog listing alone is not a passing generation check. For native subagents, verify the supported model/effort fields and a minimal response; use a fresh child if a history fork cannot accept explicit overrides.
 
-Recheck the resolved family against saved constraints and the primary family on each run. A family mismatch or loss of heterogeneity requires an already authorized compliant route or a user choice, not silent acceptance.
+Recheck the resolved family against saved constraints and the primary family on each run. A family mismatch or loss of required heterogeneity requires an already authorized compliant route or a user choice, not silent acceptance. An explicitly selected Codex-only route is valid as same-family review when no different-family constraint applies; preserve that label instead of claiming heterogeneity.
 
 Record requested/configured model separately from runtime-reported model, and mark unknown identity honestly. A reviewer's self-description is not independent backend attestation. Codex vs Claude normally provides family diversity; two harnesses using the same backend do not. Alternate backends are valid when they actually use different families. Claude Code needs an Anthropic-compatible endpoint/adapter; Codex requires its supported API format. Verify compatibility rather than assuming a model name implies a protocol.
 

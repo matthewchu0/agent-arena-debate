@@ -1,6 +1,6 @@
 ---
-name: agent-arena
-description: 'Use Arena for heterogeneous independent design and cross-review, second opinions, code/bug/plan reviews, and evidence-based analysis. Cues: 用 arena, 讨论一下, 审核一下, 交叉审核, 第二意见, 完全体 arena, 伴随子代理, 边做边检查, companion review. Discussions start with independent proposals; a named draft/diff is reviewed directly. Bare 继续 resumes an unfinished Arena checkpoint. Supports supervised execution and persistent concurrent companion checks. Not for trivial lookups or formatting; an enabled companion still accompanies ordinary work.'
+name: arena-debate
+description: Review designs, code, bugs and evidence through independent proposals and reciprocal critique. Use for an explicit Arena debate or second opinion; supports Codex subagents and cross-model reviewers. Not for prototype races or elimination tournaments.
 license: MIT
 metadata:
   version: "0.3.0"
@@ -36,6 +36,12 @@ Choose `open` when participants must discover relevant evidence or explore alter
 - A bare `继续` resumes the single relevant unfinished checkpoint under its existing authorization. Without one, continue the ordinary task. Ask only if multiple targets remain plausible or a required decision is missing.
 - “After writing / before commit” arms a review if the artifact is not ready. Review when writing is explicitly finished or a commit/push is attempted; the dormant gate does not intercept unrelated work. If the artifact is already ready, review now.
 - Enabled companionship persists through task completion and resumptions until disabled within its confirmed scope. Its queue is separate from heterogeneous Arena selection. Restore its pointer even when the previous task is complete.
+
+## Codex-only route in this fork
+
+When the user requests Codex-only review, use the host's native subagents with fresh contexts and the configured model/effort. Discover the actual dispatch, message, wait and close tools; do not assume Claude's Agent fields or CLI flags. In hosts exposing `collaboration`, use `spawn_agent` with `fork_turns: "none"` for independent first passes, deliver exchanges with `followup_task` or `send_message`, and collect actual completions. Use actual available slots, allowing for the coordinator and already-running workers. Never replace missing agents with role-play by the coordinator.
+
+Label this route **same-family Codex review**, not heterogeneous or cross-model evidence. The user's Codex-only choice permits this route; it does not satisfy an explicit different-family requirement or override a saved exact model constraint. Preserve the independent proposal, reciprocal critique, evidence and dissent steps. Carry this route label into the checkpoint, runtime checks and final report. External CLIs remain optional unless the user requests cross-model review; do not require Claude merely to use this fork in Codex.
 
 ## Participants and authorization
 

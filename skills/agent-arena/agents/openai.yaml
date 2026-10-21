@@ -1,4 +1,4 @@
 interface:
-  display_name: "Agent Arena"
-  short_description: "Heterogeneous discussion and optional companion review."
-  default_prompt: "Use $agent-arena for independent heterogeneous analysis and cross-review, preserve user intent and evidence, or enable persistent concurrent companion checks with a confirmed model and reasoning effort."
+  display_name: "Arena Debate (Codex)"
+  short_description: "Independent proposals, cross-review and evidence checks."
+  default_prompt: "Use $arena-debate for independent proposals and reciprocal critique, preserving evidence and dissent; label Codex-only participants as same-family review."
